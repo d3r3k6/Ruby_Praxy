@@ -1,20 +1,19 @@
+#This program needs a refactor with infomration I do not currently have. There is a more elegant solution that using a while loop
 #This program will find all of the leap years between two inputs
-#The exercise calls for using only a while loop and no range fnc
-#Should refactor this program eventually with a for loop and use ranges
 
-puts 'Think of two different years that you would like to know the leap years that will occur between'
+puts 'This program will print all of the leap years between two years of your choosing.'
 
-puts 'Enter the larger year number first please.'
-year1 = gets.chomp
+puts 'Enter the larger year first please.'
+year1 = gets.chomp.to_i
 
-puts 'Please enter the small year number.'
-year2 = gets.chomp
+puts 'Please enter the smaller year.'
+year2 = gets.chomp.to_i
 
-#Will assing the variable 'year' as a year counter
-year = year1
 
-while year >= year2
-	if (year % 400 == 0 and year % 4 == 0)
+
+while year1 >= year 2
+	if (year % 4 == 0 and year % 100 != 0) or (year % 4 == 0 and year % 400 == 0)
 		puts year
-	elsif (year % 4 == 0 )	
+	end	
+	year1 -= 1
 end
