@@ -12,9 +12,14 @@ while word != ''
   word = gets.chomp.downcase
 end
 
-array.each do |sort|
-  if array[0] < array [1]
-end 
+array.each { |a, b|
+  if a < b
+    array.pop[a]
+  else
+    print array
+    break
+  end } 
+
 
 =begin
 I thinnk it needs to be
