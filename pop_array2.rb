@@ -1,5 +1,6 @@
 #This program allows you to enter as many words as you like and reads them back to you in alaphabetical order
 #The task is to sort an array without using the sort method
+#This program needs refactoring. 
 
 array = []
 puts "Please enter your work and press enter. Leave blank to initiate sort"
@@ -11,5 +12,27 @@ while word != ''
   word = gets.chomp.downcase
 end
 
-sorted_array = array.sort
-puts sorted_array
+array.each do |sort|
+  if array[0] < array [1]
+end 
+
+=begin
+I thinnk it needs to be
+array.each do |a,b|
+  a = 0
+  b = 1
+  if array [a] < array [b]
+    array.pop[a]
+  elif
+    a,b =+ 1
+    if array [a] < array [b]
+      array.pop [a]
+    end         
+  else
+    break
+  end
+end
+
+puts array
+
+=end
