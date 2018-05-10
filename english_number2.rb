@@ -1,7 +1,7 @@
 #This program takes an intiger and returns the value in English
 #Now with recursion!
 
-def englishNumber englishNumber
+def englishNumber number
   if number < 0 #No negative numbers allowed
     return "Please enter a number that isn't negative."
   end
