@@ -10,3 +10,13 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 #Generate a fibbocachi sequence and store in an array such that [-1] > four million
 #lamda an expression to total the evn sumbers
 
+puts "This program will sum the even numbers in a generate Fibonacci sequence in which you define the upper limit"
+puts "Please enter the upper bound of the Fibonacci sequence you would like to sum."
+
+upper_bound = gets.to_i
+fibbo_array = []
+
+while fibbo_array[-1] <= upper_bound
+	fibbo_array.push 
+    
+end    
