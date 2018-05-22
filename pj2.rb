@@ -16,9 +16,16 @@ puts "Please enter the upper bound of the Fibonacci sequence you would like to s
 upper_bound = gets.to_i
 
 #the most ruby way to generate a fibonacci sequence is through memoization
-#first a hash which will five you the specificed value of the sequence 
+#However for this project we need to evaluate an array for the upper_bound variable.
+#Recursion is too computationally intensive. We will use iteration. More memory intensive. 
 
-fibo = Hash.new {|h,k| }
+fib_array = [0,1]
+
+while fib_array[-1] <= upper_bound
+	#write function in here
+	end	
+end		
+
 
 
 
