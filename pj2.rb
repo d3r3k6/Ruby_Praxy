@@ -19,12 +19,15 @@ upper_bound = gets.to_i
 #However for this project we need to evaluate an array for the upper_bound variable.
 #Recursion is too computationally intensive. We will use iteration. More memory intensive. 
 
-fib_array = [0,1]
+sum,a,b = 0,1,2
+while b < upper_bound
+	sum += b if b.even?
+	a,b = b, a + b
+end
 
-while fib_array[-1] <= upper_bound
-	#write function in here
-	end	
-end		
+puts sum
+
+	
 
 
 
