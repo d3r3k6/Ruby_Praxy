@@ -15,11 +15,10 @@ puts "Please enter the upper bound of the Fibonacci sequence you would like to s
 
 upper_bound = gets.to_i
 
-#the most ruby way to generate a fibonacci sequence is through memoization
-#However for this project we need to evaluate an array for the upper_bound variable.
-#Recursion is too computationally intensive. We will use iteration. More memory intensive. 
 
-sum,a,b = 0,1,2
+#Recursion is too computationally intensive. We will use iteration. More memory intensive but quicker. 
+
+sum,a,b = 0,0,1
 while b < upper_bound
 	sum += b if b.even?
 	a,b = b, a + b
