@@ -5,14 +5,14 @@ What is the smallest positive number that is evenly divisible by all of the numb
 
 
 range_array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-
-number = 1
-for range_array do |x|
+number = 20
+for range_array.each do |x|
   if number % x == 0
     return number
   else
-    number += 1
+    number = number + 20
   end
 end  
+
 puts number
       
